@@ -159,5 +159,4 @@ public class WoordenController implements Initializable {
         }
         return sentences;
     }
-
 }
