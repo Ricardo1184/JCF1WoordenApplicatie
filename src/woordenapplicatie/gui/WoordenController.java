@@ -142,11 +142,13 @@ public class WoordenController implements Initializable {
 
     private String[] splitToWords(String inputText)
     {
-        return inputText
+       /* return inputText
                 .replaceAll("[^a-zA-Z0-9]", " ") //Replaces everything that's not a character or letter
-                .toLowerCase() //Makes everything lowercase
-                .replaceAll(" +", " ") //Removes multiple consecutive spaces 
+                .toLowerCase()                  //Makes everything lowercase
+                .replaceAll(" +", " ")              //Removes multiple consecutive spaces 
                 .split(" ");                        //Split by spaces
+*/
+        return inputText.toLowerCase().split("[,\\s]+");
     }
 
     private String[] splitToSentences(String inputText)
